@@ -1,0 +1,650 @@
+html, body, button, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, nav, section, summary{
+	font-family: 'overpass';
+}
+
+h1, h2{
+
+}
+
+table{
+	margin: 30px 0;
+}
+
+th, td{
+	border: 1px solid #EAEAEA;
+	padding: 5px 20px;
+}
+
+th{
+	background: #EAEAEA;
+}
+
+th h4{
+	font-weight: bold;
+
+}
+
+body{
+	background: #FFF;
+}
+
+a, div{
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+.key-persons{
+	font-weight: bold;
+}
+
+.icon{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: #002063;
+	border-radius: 50%;
+}
+
+#focus-areas li{
+	text-align: center;
+}
+
+#focus-areas .icon{
+	display: block;
+	margin: 0 auto 10px;
+}
+
+.clr-og{
+	color: #FE6702;
+}
+
+.clr-gn{
+	color: #84BA12;
+}
+
+.stl-bold{
+	font-weight: bold;
+}
+
+.cf:before, #wall ul:before,
+.cf:after, #wall ul:after{
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after, #wall ul:after{
+    clear: both;
+}
+
+.wrap{
+	margin: 0 auto;
+	padding: 40px 0;
+}
+
+.txt-ct{
+	text-align: center;
+}
+
+.txt-rg{
+	text-align: right;
+}
+
+.strong{
+	font-weight: bold;
+}
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+.menu{
+	margin-bottom: 40px;
+}
+
+.menu a{
+	display: block;
+	text-decoration: none;
+}
+
+#resources-menu li,
+#links-menu li{
+	margin: 0 0 15px 0;
+}
+
+#resources-menu a:hover,
+#links-menu a:hover{
+	opacity: 0.5;
+}
+
+.head-bar{
+	color: #FFF;
+	padding: 5px 10px 5px 30px;
+	font-weight: 200;
+	font-style: italic;
+	background: #1F4D77 url('../img/chevron.png') no-repeat;
+	background: #1F4D77 url('../img/chevron.svg') no-repeat;
+	background-size: contain;
+}
+
+.pilot{
+	margin: 10px 0 0 0;
+	background: #89C023;
+	color: #FFF;
+	display: block;
+	text-align: center;
+	padding: 5px;
+    font-size: 13px;
+    line-height: 15px;
+    border-radius: 5px;
+}
+
+#breadcrumb{
+	border-bottom: 1px solid #DDD;
+	margin: 0 0 40px 0px;
+}
+
+#breadcrumb li{
+	display: inline-block;
+	position: relative;
+}
+
+a{
+	font-weight: 400;
+	text-decoration: none;
+	color: rgb(5, 109, 174);
+}
+
+#breadcrumb a{
+	padding: 5px 20px;
+	display: inline-block;
+}
+
+#breadcrumb li:before{
+	content: "";
+	display: inline-block;
+
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(221, 221, 221, 0);
+	border-left-color: #DDDDDD;
+	border-width: 5px;
+	margin-top: -5px;
+}
+
+#breadcrumb li:first-child{
+	margin-left: -20px;
+}
+
+#breadcrumb li:last-child:before{
+	content: none;
+}
+
+header{
+	z-index: 999;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+	/*background: linear-gradient(180deg,#00bdf2 0,#002d72);*/
+	background: #333;
+	-webkit-box-shadow: 0 3px 10px 3px rgba(0,0,0,0.2);
+	box-shadow: 0 3px 10px 3px rgba(0,0,0,0.2);
+}
+
+header .wrap{
+	padding: 0;
+}
+
+header h2{
+	margin: 0;
+}
+
+header *, footer a, footer p, footer li, footer h2{
+	color: #FFF;
+}
+
+footer{
+	/*background: #002C72;*/
+	background: #000;
+}
+
+.category{
+	font-weight: 200;
+	text-transform: uppercase;
+}
+
+#where-are-we-heading-bullets{
+	background: #EAEAEA;
+	padding: 20px;
+}
+
+#where-are-we-heading-bullets li{
+	margin: 15px 0 0 15px;
+}
+
+#where-are-we-heading-bullets li:first-child{
+	margin-top: 0;
+}
+
+/* Home */
+
+#strive{
+	background: #FFF;
+	padding: 20px;
+	-webkit-box-shadow: 0 0 20px 5px rgba(0,0,0,0.1);
+	box-shadow: 0 0 20px 5px rgba(0,0,0,0.1);
+}
+
+#implementation-journey li{
+	text-align: center;
+}
+
+#pilot{
+	background: #84BA12;
+	display: block;
+	color: #FFF;
+	padding: 10px 0;
+}
+
+#green-lighted{
+	background: #FFF;
+	display: block;
+	border-top: 1px solid #84BA12;
+	border-bottom: 1px solid #84BA12;
+}
+
+#approval{
+	display: block;
+}
+
+.level{
+	font-style: italic;
+	font-weight: bold;
+}
+
+#target-state-design .level{
+	color: #FE6702;
+}
+
+#implementation-execution-sprint-1 .level{
+	color: #84BA12;
+}
+
+#implementation-execution-sprint-1 .icon,
+#target-state-design .icon{
+	margin: 10px 0;
+}
+
+#implementation-execution-sprint-1 h4,
+#target-state-design h4{
+	margin: 0 0 10px 0;
+}
+
+.key-persons, .level{
+	text-align: center;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+	h2{
+		font-weight: 600;
+		font-size: 42px;
+		line-height: 46px;
+		margin: 0 0 20px 0;
+	}
+
+	footer h2,
+	header h2{
+		font-size: 20px;
+		line-height: 24px;
+		margin: 0;
+	}
+
+	h3{
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 28px;
+		margin: 20px 0;
+	}
+
+	h4{
+		font-size: 16px;
+	    line-height: 20px;
+	    font-weight: 400;
+	    margin: 15px 0;
+	    text-transform: uppercase;
+	    color: #68696B;
+	}
+
+	td{
+		font-weight: 300;
+		line-height: 22px;
+		font-size: 16px;
+		color: #68696B;
+	}
+
+	p, li{
+		font-weight: 300;
+		line-height: 22px;
+		font-size: 16px;
+		margin: 15px 0;
+		color: #68696B;
+	}
+
+	footer p{
+		margin: 20px 0 0 0;
+	}
+	
+	header .wrap{
+		padding: 20px 0;
+	}
+
+	header h2{
+		line-height: 31px;
+	}
+
+	.txt-small{
+		font-size: 13px;
+	}
+
+	.txt-light{
+		font-weight: 300;
+	}
+
+	.col-2{
+		width: 385px;
+	}
+
+	.category{
+		font-size: 1.39vw;
+	}
+
+	.wrap{
+		/*background: turquoise;*/
+		width: 1280px;
+	}
+
+	.sidebar{
+		position: sticky;
+		width: 200px;
+		top: 100px;
+	}
+
+	.left{
+		float: left;
+	}
+
+	.right{
+		float: right;
+	}
+
+	.data{
+		float: left;
+		width: 800px;
+		margin: 0 40px;
+	}
+
+	#focus-areas li{
+		float: left;
+		margin: 0 0 20px 20px;
+		width: 186px;
+	}
+
+	#focus-areas li:nth-child(4n+1){
+		margin: 0 0 20px 0;
+		text-align: right;
+	}
+
+	.col-gr1{
+		width: 210px;
+	}
+
+	.col-gr2{
+		width: 560px;
+	}
+
+	#where-are-we-heading-bullets{
+		position: relative;
+		width: 493px;
+		padding: 20px 0 20px 20px;
+	}
+
+	#where-are-we-heading-bullets li::before{
+		content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+		color: orange; /* Change the color */
+		font-weight: bold; /* If you want it to be bold */
+		display: inline-block; /* Needed to add space between the bullet and the text */ 
+		width: 1em; /* Also needed for space (tweak if needed) */
+		margin-left: -1em; /* Also needed for space (tweak if needed) */
+	}
+
+	#where-are-we-heading-bullets:after{
+		content: "";
+		width: 53px;
+		height: 100%;
+		background: url('../img/arrow.png') no-repeat center center;
+		background: url('../img/arrow.svg') no-repeat center center;
+		background-size: auto 100%;
+		position: absolute;
+		top: 0;
+		right: -52px;
+	}
+
+	#implementation-journey li{
+		float: left;
+		width: 25%;
+		height: 85px;
+		position: relative;
+	}
+
+	#pilot{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+
+	.wip{
+		height: 40px;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+
+	#approval{
+		background: #FFF;
+		border: 1px solid #B6B6B6;
+	}
+
+	#implementation-journey-container{
+		margin: 0 0 30px 0;
+		padding: 0 0 20px 0;
+		border-bottom: 1px solid #EAEAEA;
+	
+		position: relative;
+	}
+
+	#implementation-journey-container:after{
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 50px;
+		width: 100%;
+		background: url('../img/funnel.jpg') no-repeat center bottom;
+		background: url('../img/funnel.svg') no-repeat center bottom;
+		background-size: contain;
+		display: block;
+		z-index: -1;
+	}
+
+	#implementation-journey-label{
+		width: 155px !important;
+		height: 45px !important;
+		position: relative;
+		padding: 40px 35px 0 0;
+		text-align: right !important;
+		margin-right: 10px;
+	}
+
+	#focus-areas-label{
+		width: 150px !important;
+	    position: relative;
+	    padding: 60px 0 0 0;
+	    text-align: right !important;
+	    margin: 0 30px 0 0 !important;
+	}
+
+	#focus-areas-label:after{
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 42px;
+		bottom: 0;
+		background: url('../img/chevron-2.png') no-repeat center center;
+		background: url('../img/chevron-2.svg') no-repeat center center;
+		background-size: contain;
+		right: -38px;
+	}
+
+	#implementation-journey-label:after{
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 42px;
+		bottom: 0;
+		background: url('../img/chevron-2.png') no-repeat center center;
+		background: url('../img/chevron-2.svg') no-repeat center center;
+		background-size: contain;
+		right: 0;
+	}
+
+	.pilot .strong{
+		display: block;
+	}
+
+	#implementation-execution-sprint-1 th, #implementation-execution-sprint-1 td,
+	#target-state-design th, #target-state-design td{
+		width: 25%;
+	}
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 769px) and (max-width: 1199px) {
+
+	h2{
+		font-weight: 200;
+		font-size: 38px;
+		line-height: 42px;
+		margin: 0 0 20px 0;
+	}
+
+	footer h2,
+	header h2{
+		font-size: 20px;
+		line-height: 24px;
+		margin: 0;
+	}
+
+	h3{
+		font-size: 24px;
+		line-height: 28px;
+		font-weight: 200;
+		margin: 30px 0 10px 0;
+	}
+
+	h4{
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 20px;
+		margin: 0 0 10px 0;
+	}
+
+	p, li{
+		font-weight: 200;
+		line-height: 20px;
+		font-size: 16px;
+		margin: 15px 0;
+	}
+
+	header .wrap{
+		padding: 20px 0;
+	}
+
+	.wrap{
+		/*background: yellow;*/
+		width: 960px;
+	}
+
+	.sidebar{
+		width: 200px;
+	}
+
+	.left{
+		float: left;
+	}
+
+	.right{
+		float: right;
+	}
+
+	.data{
+		float: left;
+		width: 480px;
+		margin: 0 40px;
+	}
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+	.wrap{
+		/*background: purple;*/
+		width: 600px;
+	}
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+	.wrap{
+		/*background: orange;*/
+		width: 320px;
+	}
+
+}
+
+@media (hover) {
+    .can-i-hover::after {
+        content: "You look like you can hover.";    
+    } 
+}
+
+@media  (hover:none) {
+    .can-i-hover::after {
+        content: "I don't think you can hover.";    
+    } 
+}
+
+

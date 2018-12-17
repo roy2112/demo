@@ -1,0 +1,43 @@
+
+/*body{
+	background: rgba(0, 0, 0, 0.05);
+}*/
+
+/*h1, h2, h3, h4, h5, h6,
+p, li, label, td, th, div{
+	font-family: 'Overpass', sans-serif;
+}*/
+
+#main-nav{
+	background: #333;
+}
+
+footer{
+	background: #333;
+}
+
+.box{
+	background: #FFF;
+	box-shadow: 0px 0px 13px 0px rgba(82, 63, 105, 0.2);
+}
+
+.box-head,
+.box-content{
+	padding: 30px;
+}
+
+.box-head{
+	border-bottom: 4px solid #ebedf2;
+}
+
+.box-title{
+	margin: 0;
+	padding: 0;
+	font-size: 1.3rem;
+	font-weight: 500;
+}
+
+.box-footer{
+	background: #FFF;
+	padding: 20px;
+}
