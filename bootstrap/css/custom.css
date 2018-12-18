@@ -1,12 +1,22 @@
 
-/*body{
+body{
 	background: rgba(0, 0, 0, 0.05);
-}*/
+}
 
-/*h1, h2, h3, h4, h5, h6,
+h1, h2, h3, h4, h5, h6,
 p, li, label, td, th, div{
 	font-family: 'Overpass', sans-serif;
-}*/
+}
+
+.form-group.required .control-label:after {
+	content: "*";
+	color: red;
+}
+
+.breadcrumb,
+.jumbotron{
+	background: #FFF;
+}
 
 #main-nav{
 	background: #333;
@@ -17,8 +27,9 @@ footer{
 }
 
 .box{
+	border-radius: 4px;
 	background: #FFF;
-	box-shadow: 0px 0px 13px 0px rgba(82, 63, 105, 0.2);
+	box-shadow: 0px 0px 13px 0px rgba(82, 63, 105, 0.1);
 }
 
 .box-head,
@@ -40,4 +51,8 @@ footer{
 .box-footer{
 	background: #FFF;
 	padding: 20px;
+}
+
+hr{
+	margin: 2rem 0;
 }
