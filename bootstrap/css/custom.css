@@ -1,6 +1,6 @@
 
 body{
-	background: rgba(0, 0, 0, 0.05);
+	background: #FFF;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -71,7 +71,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
 
 .breadcrumb,
 .jumbotron{
-	background: #FFF;
+	background: #EEEEEE;
 }
 
 #main-nav{
@@ -86,7 +86,8 @@ footer{
 	border-radius: 4px;
 	overflow: hidden;
 	background: #FFF;
-	box-shadow: 0px 0px 13px 0px rgba(82, 63, 105, 0.1);
+	-webkit-box-shadow: 0 3px 10px 1px rgba(0,0,0,0.1);
+	box-shadow: 0 3px 10px 1px rgba(0,0,0,0.1);
 }
 
 .box-head{
@@ -212,12 +213,21 @@ th .icon{
 	height: 36px;
 	border-top: 1px solid #84BA12;
 	border-bottom: 1px solid #84BA12;
+	background-color: #ffffff;
+	background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%2384ba12' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
 #approval{
 	display: block;
 	height: 36px;
 	border: 1px solid #B6B6B6;
+	background-color: #ffffff;
+	background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%23b6b6b6' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+#where-are-we-heading-bullets{
+	background: #EAEAEA;
+	position: relative;
 }
 
 @media screen and (min-width: 960px){
@@ -231,4 +241,70 @@ th .icon{
 		position: absolute;
 	}
 
+	#where-are-we-heading-bullets:after{
+		content: "";
+		width: 55px;
+		height: 100%;
+		background: url('../img/arrow.png') no-repeat center center;
+		background: url('../img/arrow.svg') no-repeat center center;
+		background-size: auto 100%;
+		position: absolute;
+		top: 0;
+		right: -55px;
+	}
+
+	#implementation-journey-container{
+		position: relative;
+	}
+
+	#implementation-journey-container:after{
+		content: "";
+		position: absolute;
+		bottom: -65px;
+		left: 0;
+		height: 25px;
+		width: 100%;
+		background: url('../img/funnel.jpg') no-repeat center bottom;
+		background: url('../img/funnel.svg') no-repeat center bottom;
+		background-size: cover;
+		display: block;
+	}
+
+	#focus-areas{
+		margin-top: 5rem !important;
+	}
+
+	#implementation-journey .stl-bold,
+	#focus-areas .stl-bold{
+		right: 45px;
+		text-align: right;
+		position: absolute;
+		top: 45px;
+	}
+
+	#implementation-journey .stl-bold:after{
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 42px;
+		top: 5px;
+		background: url('../img/chevron-2.png') no-repeat center center;
+		background: url('../img/chevron-2.svg') no-repeat center center;
+		background-size: contain;
+		right: -30px;
+	}
+
+	#focus-areas .stl-bold:after{
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 42px;
+		top: -11px;
+		background: url('../img/chevron-2.png') no-repeat center center;
+		background: url('../img/chevron-2.svg') no-repeat center center;
+		background-size: contain;
+		right: -30px;
+	}
+
 }
+
