@@ -2,12 +2,7 @@
 body{
 	background: #FFF;
 }
-
-h1, h2, h3, h4, h5, h6,
-p, li, td, th, div, input, select, label, textarea, button{
-	font-family: 'Overpass', 'Arial', sans-serif;
-}
-
+/*
 h1, h2, h3{
 	font-weight: 600;
 }
@@ -22,6 +17,11 @@ p, li, td, div, input, select, textarea, button{
 
 .font-weight-bold{
 	font-weight: 600 !important;
+}*/
+
+.card-footer{
+	font-size: 13px;
+	color: #A9A9A9;
 }
 
 .sticky-top{
